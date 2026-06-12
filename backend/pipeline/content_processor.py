@@ -10,7 +10,7 @@ import json
 import logging
 from pathlib import Path
 
-import google.generativeai as genai
+from google import genai
 
 from config import settings
 from models.schemas import KeyInfo, TopicCache
@@ -23,10 +23,9 @@ MAX_RETRIES = 5
 INITIAL_BACKOFF = 10  # seconds
 
 
-def _get_model() -> genai.GenerativeModel:
-    """Configure and return a Gemini generative model instance."""
-    genai.configure(api_key=settings.GEMINI_API_KEY)
-    return genai.GenerativeModel(settings.GEMINI_MODEL)
+def _get_client() -> genai.Client:
+    """Configure and return a Gemini client instance."""
+    return genai.Client(api_key=settings.GEMINI_API_KEY)
 
 
 def _cache_path(topic_id: str) -> Path:
@@ -59,11 +58,13 @@ def save_cache(cache: TopicCache) -> None:
     logger.info("Saved cache for '%s'", cache.topic_id)
 
 
-async def _call_gemini_with_retry(model: genai.GenerativeModel, prompt: str) -> str:
+async def _call_gemini_with_retry(client: genai.Client, prompt: str) -> str:
     """Call Gemini with exponential backoff retry on rate limit errors."""
     for attempt in range(MAX_RETRIES):
         try:
-            response = await model.generate_content_async(prompt)
+            response = await client.aio.models.generate_content(
+                model=settings.GEMINI_MODEL, contents=prompt
+            )
             return response.text.strip()
         except Exception as e:
             error_str = str(e).lower()
@@ -85,7 +86,7 @@ async def _call_gemini_with_retry(model: genai.GenerativeModel, prompt: str) -> 
     raise RuntimeError("Max retries exceeded")
 
 
-async def generate_summary(model: genai.GenerativeModel, text: str) -> str:
+async def generate_summary(client: genai.Client, text: str) -> str:
     """
     Generate a concise summary (≤250 words) of a legal text using Gemini.
     """
@@ -98,14 +99,14 @@ async def generate_summary(model: genai.GenerativeModel, text: str) -> str:
         "SUMMARY:"
     )
     try:
-        return await _call_gemini_with_retry(model, prompt)
+        return await _call_gemini_with_retry(client, prompt)
     except Exception as e:
         logger.error("Summary generation failed: %s", e)
         return "Summary could not be generated at this time."
 
 
 async def extract_key_info(
-    model: genai.GenerativeModel, text: str
+    client: genai.Client, text: str
 ) -> KeyInfo:
     """
     Extract structured key information from legal text using Gemini.
@@ -125,7 +126,7 @@ async def extract_key_info(
         "JSON:"
     )
     try:
-        raw = await _call_gemini_with_retry(model, prompt)
+        raw = await _call_gemini_with_retry(client, prompt)
         # Strip markdown code fences if present
         if raw.startswith("```"):
             raw = raw.split("\n", 1)[1] if "\n" in raw else raw[3:]
@@ -150,7 +151,7 @@ async def extract_key_info(
 
 
 async def generate_card_description(
-    model: genai.GenerativeModel, text: str, topic_name: str
+    client: genai.Client, text: str, topic_name: str
 ) -> str:
     """Generate a short card description (1-2 sentences) for a topic."""
     prompt = (
@@ -160,7 +161,7 @@ async def generate_card_description(
         "Return ONLY the description text, no quotes or extra formatting."
     )
     try:
-        return await _call_gemini_with_retry(model, prompt)
+        return await _call_gemini_with_retry(client, prompt)
     except Exception as e:
         logger.error("Card description generation failed: %s", e)
         return ""
@@ -187,20 +188,20 @@ async def process_topic(topic_id: str, raw_text: str) -> TopicCache:
     logger.info("Processing topic '%s' with Gemini...", topic_id)
     metadata = settings.TOPIC_METADATA.get(topic_id, {})
 
-    model = _get_model()
+    client = _get_client()
 
     # Generate summary first
-    summary = await generate_summary(model, raw_text)
+    summary = await generate_summary(client, raw_text)
     # Rate limit pause
     await asyncio.sleep(API_CALL_DELAY)
 
     # Then extract key info
-    key_info = await extract_key_info(model, raw_text)
+    key_info = await extract_key_info(client, raw_text)
     await asyncio.sleep(API_CALL_DELAY)
 
     # Generate AI card description
     card_desc = await generate_card_description(
-        model, raw_text, metadata.get("name", topic_id)
+        client, raw_text, metadata.get("name", topic_id)
     )
     description = card_desc if card_desc else metadata.get("description", "")
 

@@ -7,7 +7,7 @@ Includes retry logic with exponential backoff for rate limits.
 import asyncio
 import logging
 
-import google.generativeai as genai
+from google import genai
 
 from config import settings
 from rag.vector_store import get_or_create_vector_store
@@ -18,17 +18,18 @@ MAX_RETRIES = 5
 INITIAL_BACKOFF = 10  # seconds
 
 
-def _get_model() -> genai.GenerativeModel:
-    """Configure and return a Gemini model instance."""
-    genai.configure(api_key=settings.GEMINI_API_KEY)
-    return genai.GenerativeModel(settings.GEMINI_MODEL)
+def _get_client() -> genai.Client:
+    """Configure and return a Gemini client instance."""
+    return genai.Client(api_key=settings.GEMINI_API_KEY)
 
 
-async def _call_gemini_with_retry(model: genai.GenerativeModel, prompt: str) -> str:
+async def _call_gemini_with_retry(client: genai.Client, prompt: str) -> str:
     """Call Gemini with exponential backoff retry on rate limit errors."""
     for attempt in range(MAX_RETRIES):
         try:
-            response = await model.generate_content_async(prompt)
+            response = await client.aio.models.generate_content(
+                model=settings.GEMINI_MODEL, contents=prompt
+            )
             return response.text.strip()
         except Exception as e:
             error_str = str(e).lower()
@@ -209,9 +210,9 @@ async def ask_question(
     prompt = _build_chat_prompt(question, chunks, history)
 
     # Step 3: Generate answer with Gemini (with retry)
-    model = _get_model()
+    client = _get_client()
     try:
-        answer = await _call_gemini_with_retry(model, prompt)
+        answer = await _call_gemini_with_retry(client, prompt)
     except Exception as e:
         logger.error("Gemini generation failed: %s", e)
         return {
