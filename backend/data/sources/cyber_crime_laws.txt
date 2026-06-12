@@ -1,0 +1,125 @@
+CYBER CRIME LAWS IN INDIA
+THE INFORMATION TECHNOLOGY ACT, 2000
+(As amended by the Information Technology (Amendment) Act, 2008)
+
+CHAPTER I – PRELIMINARY
+
+Section 1: Short Title, Extent, Commencement
+This Act may be called the Information Technology Act, 2000. It extends to the whole of India and also applies to any offence or contravention committed outside India by any person.
+
+Section 2: Definitions
+(1) "Access" means gaining entry into, instructing or communicating with the logical, arithmetical, or memory function resources of a computer, computer system or computer network.
+(2) "Computer" means any electronic, magnetic, optical or other high-speed data processing device which performs logical, arithmetic and memory functions by manipulations of electronic, magnetic or optical impulses.
+(3) "Computer network" means the interconnection of one or more computers through the use of satellite, microwave, terrestrial line, wire, wireless or other communication media.
+(4) "Computer system" means a device or collection of devices including input and output support devices and excluding calculators.
+(5) "Cyber security" means protecting information, equipment, devices, computer, computer resource, communication device and information stored therein from unauthorized access, use, disclosure, disruption, modification or destruction.
+(6) "Data" means a representation of information, knowledge, facts, concepts, or instructions prepared in a formalized manner.
+(7) "Electronic signature" means authentication of any electronic record by a subscriber by means of the electronic technique.
+(8) "Intermediary" means any person who on behalf of another person receives, stores, or transmits that record or provides any service with respect to that record. It includes telecom service providers, network service providers, internet service providers, web-hosting service providers, search engines, online payment sites, online-auction sites, online-marketplace, and cyber cafes.
+
+CHAPTER IX – PENALTIES, COMPENSATION AND ADJUDICATION
+
+Section 43: Penalty and Compensation for Damage to Computer, Computer System
+If any person without permission of the owner or any person in charge of a computer, computer system or computer network:
+(a) Accesses or secures access to such computer, computer system or computer network
+(b) Downloads, copies, or extracts any data, computer data base or information from such computer
+(c) Introduces or causes to be introduced any computer contaminant or computer virus
+(d) Damages or causes to be damaged any computer, computer system, or computer network, data, computer data base or any other programmes
+(e) Disrupts or causes disruption of any computer, computer system, or computer network
+(f) Denies or causes the denial of access to any person authorized to access any computer
+(g) Provides any assistance to any person to facilitate access to a computer in contravention of the provisions
+(h) Charges the services availed of by a person to the account of another person
+(i) Destroys, deletes, or alters any information residing in a computer resource or diminishes its value or utility
+(j) Steals, conceals, destroys, or alters or causes any person to steal, conceal, destroy, or alter any computer source code
+
+Such person shall be liable to pay damages by way of compensation to the person so affected. Compensation up to Rs. 5 crores per incident (adjudicated by an adjudicating officer).
+
+CHAPTER XI – OFFENCES
+
+Section 65: Tampering with Computer Source Documents
+Whoever knowingly or intentionally conceals, destroys, or alters any computer source code used for a computer, computer programme, computer system, or computer network when the source code is required to be kept or maintained by law.
+Punishment: Imprisonment up to 3 years, or fine up to Rs. 2 lakhs, or both.
+
+Section 66: Computer Related Offences (Hacking)
+If any person, dishonestly or fraudulently, does any act referred to in Section 43, he shall be punishable with imprisonment for a term which may extend to 3 years or with fine which may extend to Rs. 5 lakhs or with both.
+
+Section 66A: Punishment for Sending Offensive Messages (STRUCK DOWN)
+This section was struck down by the Supreme Court of India in Shreya Singhal v. Union of India (2015) as unconstitutional for violating Article 19(1)(a) (Freedom of Speech and Expression).
+
+Section 66B: Punishment for Dishonestly Receiving Stolen Computer Resource or Communication Device
+Imprisonment up to 3 years, or fine up to Rs. 1 lakh, or both.
+
+Section 66C: Punishment for Identity Theft
+Whoever fraudulently or dishonestly makes use of the electronic signature, password or any other unique identification feature of any other person.
+Punishment: Imprisonment up to 3 years, and fine up to Rs. 1 lakh.
+
+Section 66D: Punishment for Cheating by Personation by Using Computer Resource
+Whoever by means of any communication device or computer resource cheats by personating.
+Punishment: Imprisonment up to 3 years, and fine up to Rs. 1 lakh.
+
+Section 66E: Punishment for Violation of Privacy
+Whoever intentionally or knowingly captures, publishes, or transmits the image of a private area of any person without his or her consent, under circumstances violating the privacy of that person.
+Punishment: Imprisonment up to 3 years, or fine not exceeding Rs. 2 lakhs, or both.
+
+Section 66F: Punishment for Cyber Terrorism
+(1) Whoever with intent to threaten the unity, integrity, security, or sovereignty of India or to strike terror in the people or any section of the people by:
+(a) Denying or causing the denial of access to any person authorized to access computer resource
+(b) Attempting to penetrate or access a computer resource without authorization
+(c) Introducing or causing to introduce any computer contaminant
+And by means of such conduct causes or is likely to cause death or injuries to persons or damage to property or disruption of essential supplies or services or destruction of property.
+Punishment: Imprisonment which may extend to imprisonment for life.
+
+Section 67: Punishment for Publishing or Transmitting Obscene Material in Electronic Form
+First conviction: Imprisonment up to 3 years and fine up to Rs. 5 lakhs.
+Subsequent conviction: Imprisonment up to 5 years and fine up to Rs. 10 lakhs.
+
+Section 67A: Punishment for Publishing or Transmitting Material Containing Sexually Explicit Act
+First conviction: Imprisonment up to 5 years and fine up to Rs. 10 lakhs.
+Subsequent conviction: Imprisonment up to 7 years and fine up to Rs. 10 lakhs.
+
+Section 67B: Punishment for Publishing or Transmitting Material Depicting Children in Sexually Explicit Act
+First conviction: Imprisonment up to 5 years and fine up to Rs. 10 lakhs.
+Subsequent conviction: Imprisonment up to 7 years and fine up to Rs. 10 lakhs.
+
+Section 67C: Preservation and Retention of Information by Intermediaries
+Intermediaries shall preserve and retain such information as may be specified for such duration and in such manner and format as the Central Government may prescribe.
+
+Section 69: Powers to Issue Directions for Interception or Monitoring or Decryption
+Where the Central Government or a State Government is satisfied that it is necessary in the interest of the sovereignty or integrity of India, defence of India, security of the State, friendly relations with foreign States, public order, or for preventing incitement to the commission of any cognizable offence, it may direct any agency of the appropriate Government to intercept, monitor, or decrypt any information generated, transmitted, received, or stored in any computer resource.
+
+Section 69A: Power to Issue Directions for Blocking for Public Access of Any Information Through Any Computer Resource
+The Central Government may direct any agency or intermediary to block access to any information generated, transmitted, received, stored or hosted in any computer resource.
+
+Section 72: Breach of Confidentiality and Privacy
+Any person who has secured access to any electronic record, book, register, correspondence, information, document or other material, and discloses such material without consent shall be punished with imprisonment up to 2 years, or fine up to Rs. 1 lakh, or both.
+
+Section 72A: Punishment for Disclosure of Information in Breach of Lawful Contract
+Any person including an intermediary who, while providing services under the terms of lawful contract, has secured access to any material and intentionally discloses such material without consent.
+Punishment: Imprisonment up to 3 years, or fine up to Rs. 5 lakhs, or both.
+
+RELATED LAWS AND RULES:
+1. Indian Penal Code (now Bharatiya Nyaya Sanhita) sections on fraud, cheating, forgery also apply to cybercrimes
+2. Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011
+3. Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021
+4. Digital Personal Data Protection Act, 2023
+5. Reserve Bank of India (RBI) guidelines on cyber security for banks and financial institutions
+
+COMMON TYPES OF CYBER CRIMES:
+1. Phishing - Fraudulent emails/websites to steal personal information
+2. Ransomware - Malware that encrypts data and demands ransom
+3. Identity Theft - Unauthorized use of another person's identity
+4. Cyber Stalking - Online harassment and stalking
+5. Online Fraud - Financial fraud through digital means
+6. Data Breach - Unauthorized access to confidential data
+7. Cyber Bullying - Harassment through digital platforms
+8. Child Pornography - Distribution of explicit content involving minors
+9. DDoS Attacks - Distributed Denial of Service attacks
+10. Social Engineering - Manipulation to gain unauthorized access
+
+REPORTING CYBER CRIMES:
+1. National Cyber Crime Reporting Portal: www.cybercrime.gov.in
+2. Helpline Number: 1930
+3. Local Police Station (File FIR under IT Act)
+4. CERT-In (Indian Computer Emergency Response Team)
+
+Source: Information Technology Act, 2000 (Act No. 21 of 2000), as amended by the Information Technology (Amendment) Act, 2008 (Act No. 10 of 2009). Published in the Gazette of India.

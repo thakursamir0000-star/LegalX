@@ -1,0 +1,177 @@
+/* ============================================================
+   SearchBar Styles
+   ============================================================ */
+.search-bar {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+}
+
+/* Input wrapper */
+.search-bar__input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  background: var(--color-surface);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-3) var(--spacing-5);
+  transition: all var(--transition-base);
+}
+
+.search-bar__input-wrapper:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.10), 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.search-bar__input-wrapper--open {
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+/* Hero variant */
+.search-bar--hero .search-bar__input-wrapper {
+  padding: var(--spacing-4) var(--spacing-6);
+  background: rgba(26, 23, 48, 0.80);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(99, 102, 241, 0.20);
+}
+
+.search-bar__icon {
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.search-bar__input {
+  flex: 1;
+  background: transparent;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-base);
+}
+
+.search-bar--hero .search-bar__input {
+  font-size: var(--font-size-lg);
+}
+
+.search-bar__input::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* Spinner */
+.search-bar__spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--color-surface-light);
+  border-top-color: var(--color-primary-light);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+/* Clear button */
+.search-bar__clear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.search-bar__clear:hover {
+  color: var(--color-text-primary);
+  background: var(--color-surface-light);
+}
+
+/* Dropdown */
+.search-bar__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--glass-border);
+  border-top: none;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  overflow: hidden;
+  z-index: var(--z-dropdown);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.40);
+}
+
+.search-bar__result {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  width: 100%;
+  padding: var(--spacing-3) var(--spacing-5);
+  text-align: left;
+  color: var(--color-text-primary);
+  transition: background var(--transition-fast);
+  cursor: pointer;
+}
+
+.search-bar__result:hover {
+  background: var(--color-surface-hover);
+}
+
+.search-bar__result-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary-subtle);
+  color: var(--color-primary-light);
+  flex-shrink: 0;
+}
+
+.search-bar__result-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.search-bar__result-name {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.search-bar__result-desc {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+.search-bar__result-arrow {
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.search-bar__result:hover .search-bar__result-arrow {
+  transform: translateX(3px);
+  color: var(--color-primary-light);
+}
+
+.search-bar__no-results {
+  padding: var(--spacing-6);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* Responsive */
+@media (max-width: 639px) {
+  .search-bar--hero .search-bar__input-wrapper {
+    padding: var(--spacing-3) var(--spacing-4);
+  }
+
+  .search-bar--hero .search-bar__input {
+    font-size: var(--font-size-base);
+  }
+}

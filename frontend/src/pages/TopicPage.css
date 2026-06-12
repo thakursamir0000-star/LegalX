@@ -1,0 +1,197 @@
+/* ============================================================
+   TopicPage Styles
+   ============================================================ */
+.topic-page {
+  position: relative;
+  min-height: calc(100vh - var(--navbar-height));
+  padding: var(--spacing-8) 0 var(--spacing-20);
+}
+
+/* Background glow */
+.topic-page__bg-glow {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 400px;
+  background: radial-gradient(
+    ellipse at center,
+    color-mix(in srgb, var(--topic-accent, var(--color-primary)) 8%, transparent),
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(60px);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-8);
+  position: relative;
+  z-index: 1;
+}
+
+.breadcrumb__link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb__link:hover {
+  color: var(--color-primary-light);
+}
+
+.breadcrumb__sep {
+  color: var(--color-text-muted);
+  opacity: 0.5;
+}
+
+.breadcrumb__current {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+/* Topic Header */
+.topic-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-5);
+  margin-bottom: var(--spacing-8);
+  position: relative;
+  z-index: 1;
+}
+
+.topic-header__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-lg);
+  flex-shrink: 0;
+  border: 1px solid color-mix(in srgb, var(--topic-accent, var(--color-primary)) 20%, transparent);
+}
+
+.topic-header__title {
+  font-size: var(--font-size-3xl);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+}
+
+.topic-header__desc {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  margin-top: var(--spacing-1);
+  line-height: 1.6;
+}
+
+/* Tabs */
+.topic-tabs {
+  display: flex;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-6);
+  padding: var(--spacing-1);
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+}
+
+.topic-tab {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-3) var(--spacing-5);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.topic-tab:hover {
+  color: var(--color-text-secondary);
+  background: var(--color-surface-light);
+}
+
+.topic-tab--active {
+  color: white;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.30);
+}
+
+.topic-tab--active:hover {
+  color: white;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+}
+
+/* Content area */
+.topic-content {
+  position: relative;
+  z-index: 1;
+  margin-bottom: var(--spacing-8);
+}
+
+/* Sections */
+.topic-section {
+  position: relative;
+  z-index: 1;
+  margin-bottom: var(--spacing-8);
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .topic-page {
+    padding: var(--spacing-6) 0 var(--spacing-12);
+  }
+
+  .topic-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-4);
+  }
+
+  .topic-header__icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .topic-header__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .topic-tabs {
+    width: 100%;
+  }
+
+  .topic-tab {
+    flex: 1;
+    justify-content: center;
+    padding: var(--spacing-3) var(--spacing-3);
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 639px) {
+  .breadcrumb {
+    margin-bottom: var(--spacing-6);
+  }
+
+  .topic-header__title {
+    font-size: var(--font-size-xl);
+  }
+}

@@ -1,0 +1,195 @@
+GST REGISTRATION IN INDIA
+GOODS AND SERVICES TAX ACT, 2017
+Central Goods and Services Tax Act, 2017 (CGST Act)
+Integrated Goods and Services Tax Act, 2017 (IGST Act)
+State Goods and Services Tax Acts (SGST Acts)
+
+CHAPTER I – OVERVIEW OF GST
+
+What is GST?
+The Goods and Services Tax (GST) is a comprehensive, multi-stage, destination-based tax that is levied on every value addition. It is a single domestic indirect tax law for the entire country. GST was implemented in India on 1st July 2017, replacing multiple indirect taxes like excise duty, service tax, VAT, CST, and others.
+
+Types of GST:
+1. CGST (Central GST) – Collected by the Central Government on intra-state supply
+2. SGST (State GST) – Collected by the State Government on intra-state supply
+3. IGST (Integrated GST) – Collected by the Central Government on inter-state supply
+4. UTGST (Union Territory GST) – Collected in Union Territories
+
+GST Tax Rates:
+The GST rates are structured in five slabs:
+- 0% (Exempt) – Essential goods like fresh fruits, vegetables, milk, eggs, bread
+- 5% – Items of mass consumption like sugar, tea, edible oil, spices
+- 12% – Processed foods, computers, mobile phones
+- 18% – Most goods and services fall under this category, including financial services, IT services, restaurants
+- 28% – Luxury items like cars, tobacco, aerated drinks, cement
+
+CHAPTER II – GST REGISTRATION
+
+Section 22: Persons Liable for Registration
+(1) Every supplier shall be liable to be registered under this Act in the State or Union Territory from where he makes a taxable supply if his aggregate turnover in a financial year exceeds:
+- Rs. 40 lakhs for goods (Rs. 20 lakhs for special category states)
+- Rs. 20 lakhs for services (Rs. 10 lakhs for special category states)
+
+Special Category States: Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim, Tripura, Uttarakhand, Himachal Pradesh
+
+Section 24: Compulsory Registration (Regardless of Turnover)
+The following persons are required to register regardless of turnover:
+(a) Persons making inter-state taxable supply
+(b) Casual taxable persons making taxable supply
+(c) Persons who are required to pay tax under reverse charge mechanism
+(d) Non-resident taxable persons
+(e) Persons required to deduct tax under section 51 (TDS)
+(f) Persons who make taxable supply on behalf of other registered taxable persons (agents)
+(g) Input Service Distributor
+(h) Persons who supply goods and/or services through electronic commerce operator
+(i) Every electronic commerce operator
+(j) Persons supplying online information and database access or retrieval services from a place outside India to a person in India
+(k) Such other person or class of persons as may be notified by the Government
+
+Section 25: Procedure for Registration
+(1) Every person who is liable to be registered shall apply for registration within 30 days from the date on which he becomes liable.
+(2) A person may voluntarily register even if not required.
+(3) Every person shall have a Permanent Account Number (PAN) issued under the Income Tax Act.
+(4) A person having multiple business verticals in a State or Union Territory may obtain a separate registration for each business vertical.
+
+REGISTRATION PROCESS (Online):
+
+Step 1: Access the GST Portal
+- Visit www.gst.gov.in
+- Click on "Register Now" under the "Taxpayers" section
+
+Step 2: Fill Part A of GST REG-01
+Required information:
+- PAN of the business/individual
+- Mobile number
+- Email address
+- State and district
+You will receive OTPs on mobile and email for verification.
+
+Step 3: Temporary Reference Number (TRN)
+After verification, a TRN is generated which can be used to fill Part B.
+
+Step 4: Fill Part B of GST REG-01
+Required details:
+- Business details (legal name, trade name, constitution of business)
+- Promoter/Partner details with Aadhaar
+- Authorized signatory details
+- Principal place of business
+- Additional place of business
+- HSN codes for goods and SAC codes for services
+- Bank account details
+
+Step 5: Upload Required Documents
+Documents required for GST registration:
+1. PAN Card of the applicant
+2. Aadhaar Card
+3. Proof of business registration (Certificate of Incorporation, Partnership Deed, etc.)
+4. Identity and address proof of promoters/directors
+5. Photograph of promoters/directors
+6. Address proof of principal place of business:
+   - Own property: Property tax receipt, Municipal Khata copy, electricity bill
+   - Rented property: Rent agreement, NOC from landlord
+7. Bank account statement or cancelled cheque
+8. Digital Signature Certificate (DSC) for companies and LLPs
+9. Letter of Authorization or Board Resolution for authorized signatory
+
+Step 6: Verification and Submission
+- Verify the application using DSC (for companies/LLPs) or EVC (Electronic Verification Code)
+- Submit the application
+- Application Reference Number (ARN) is generated
+
+Step 7: Processing by Tax Officer
+- The tax officer verifies the application within 7 working days
+- If additional information is required, GST REG-03 (notice) is issued
+- The applicant must respond within 7 working days via GST REG-04
+
+Step 8: Issuance of Registration Certificate
+- If approved, GST REG-06 (registration certificate) is issued
+- GSTIN (GST Identification Number) is allocated – a 15-digit unique number
+
+GSTIN FORMAT:
+- First 2 digits: State code
+- Next 10 digits: PAN number
+- 13th digit: Entity number
+- 14th digit: 'Z' by default
+- 15th digit: Check digit
+
+Section 29: Cancellation of Registration
+Registration can be cancelled by:
+(1) The proper officer (suo motu) if:
+- The registered person has contravened the provisions of the Act
+- A composition dealer has not furnished returns for 3 consecutive tax periods
+- Any registered person has not furnished returns for 6 consecutive months
+- Registration was obtained by fraud, willful misstatement, or suppression of facts
+
+(2) The registered person (voluntary) by applying in GST REG-16 if:
+- Business has been discontinued
+- Business has been transferred
+- Change in constitution of business
+- The taxable person is no longer liable to be registered
+
+Section 30: Revocation of Cancellation
+A registered person whose registration is cancelled may apply for revocation within 30 days from the date of service of the cancellation order in GST REG-21.
+
+CHAPTER III – GST RETURNS AND COMPLIANCE
+
+Important GST Returns:
+1. GSTR-1: Details of outward supplies (monthly/quarterly by 11th/13th of next month)
+2. GSTR-2A: Auto-populated from GSTR-1 of suppliers (read-only)
+3. GSTR-3B: Summary return with tax payment (monthly by 20th of next month)
+4. GSTR-4: Return for composition dealers (annually by 30th April)
+5. GSTR-9: Annual return (by 31st December of next financial year)
+6. GSTR-9C: Reconciliation statement (for turnover above Rs. 5 crores)
+
+COMPOSITION SCHEME:
+Available for businesses with turnover up to Rs. 1.5 crores:
+- Pay tax at a fixed rate: 1% for manufacturers, 5% for restaurants, 1% for other suppliers
+- Cannot collect tax from customers
+- Cannot claim Input Tax Credit (ITC)
+- Must file only one return per quarter
+- Cannot make inter-state supply
+
+INPUT TAX CREDIT (ITC):
+Section 16: Eligibility and Conditions for Taking Input Tax Credit
+(1) Every registered person shall be entitled to take credit of input tax charged on any supply of goods or services which are used in the course of business.
+Conditions:
+(a) Must possess a tax invoice
+(b) Must have received the goods or services
+(c) Tax charged must have been actually paid to the government by the supplier
+(d) Must have furnished the return under section 39
+
+Section 17: Blocked Credits
+ITC is not available for:
+- Motor vehicles (except when used for specified purposes)
+- Food and beverages, outdoor catering, beauty treatment, health services
+- Membership of a club, health, and fitness center
+- Life insurance and health insurance (except when mandatory)
+- Travel benefits to employees on vacation
+- Goods or services used for personal consumption
+- Goods lost, stolen, destroyed, written off, or disposed of as gift or free sample
+
+PENALTIES UNDER GST:
+
+Section 122: Penalty for Certain Offences
+(1) Where a taxable person who:
+(i) Supplies goods/services without issue of invoice or issues incorrect invoice: penalty equal to the tax evaded or Rs. 10,000, whichever is higher
+(ii) Issues invoice without supply of goods/services: same penalty
+(iii) Collects tax but fails to pay to the government within 3 months: same penalty
+(iv) Collects tax in contravention of provisions: same penalty
+(v) Fails to deduct tax or short deduction of tax: same penalty
+(vi) Takes or utilizes ITC without actual receipt of goods/services: same penalty
+
+Section 132: Punishment for Certain Offences
+(1) Whoever commits any of the specified offences (involving tax amount exceeding Rs. 5 crores):
+- Tax evasion: imprisonment up to 5 years and fine
+- Repeated offence: imprisonment up to 5 years and fine
+(2) Tax evasion between Rs. 2 crores and Rs. 5 crores: imprisonment up to 3 years and fine
+(3) Tax evasion between Rs. 1 crore and Rs. 2 crores: imprisonment up to 1 year and fine
+
+E-WAY BILL:
+An e-Way Bill is an electronic document generated on the GST portal for movement of goods exceeding Rs. 50,000 in value. It is required for inter-state movement of goods and intra-state movement (in states that have notified it).
+
+GST COUNCIL:
+The GST Council is a constitutional body under Article 279A of the Indian Constitution. It consists of the Union Finance Minister (Chairperson), Union Minister of State for Finance, and State Finance Ministers. It makes recommendations on GST rates, exemptions, thresholds, model GST laws, and dispute resolution.
+
+Source: Central Goods and Services Tax Act, 2017 (Act No. 12 of 2017), Integrated Goods and Services Tax Act, 2017 (Act No. 13 of 2017). GST Portal: www.gst.gov.in. CBIC (Central Board of Indirect Taxes and Customs) notifications and circulars.

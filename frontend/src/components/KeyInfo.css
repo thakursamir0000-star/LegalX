@@ -1,0 +1,112 @@
+/* ============================================================
+   KeyInfo Styles
+   ============================================================ */
+.key-info__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-6);
+}
+
+.key-info-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  transition: all var(--transition-base);
+}
+
+.key-info-card:hover {
+  border-color: color-mix(in srgb, var(--ki-color) 40%, transparent);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25),
+    0 0 40px color-mix(in srgb, var(--ki-color) 10%, transparent);
+  transform: translateY(-3px);
+}
+
+.key-info-card--skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  padding: var(--spacing-6);
+}
+
+/* Icon */
+.key-info-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  color: var(--ki-color);
+  transition: transform var(--transition-base);
+}
+
+.key-info-card:hover .key-info-card__icon {
+  transform: scale(1.1);
+}
+
+/* Title */
+.key-info-card__title {
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+}
+
+/* List */
+.key-info-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.key-info-card__item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-3);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.key-info-card__bullet {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  margin-top: 8px;
+  border-radius: 50%;
+  background: var(--ki-color);
+  opacity: 0.7;
+}
+
+/* Empty state */
+.key-info--empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-4);
+  padding: var(--spacing-16);
+  color: var(--color-text-muted);
+  text-align: center;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+}
+
+.key-info--empty p {
+  font-size: var(--font-size-sm);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .key-info__grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-4);
+  }
+}
