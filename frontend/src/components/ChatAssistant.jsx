@@ -94,11 +94,11 @@ function ChatAssistant({ topicId, topicName }) {
             <Sparkles size={18} />
           </div>
           <div>
-            <h3 className="chat__header-title">AI Legal Assistant</h3>
-            <span className="chat__header-sub">Ask about {topicName || 'this topic'}</span>
+            <h3 className="chat__header-title">Ask a follow-up</h3>
+            <span className="chat__header-sub">Questions about {topicName || 'this topic'}</span>
           </div>
         </div>
-        <span className="badge badge-success">Online</span>
+        <span className="badge badge-success">Ready</span>
       </div>
 
       {/* Messages */}
@@ -108,9 +108,9 @@ function ChatAssistant({ topicId, topicName }) {
             <div className="chat__empty-icon">
               <Bot size={36} />
             </div>
-            <p className="chat__empty-title">How can I help you?</p>
+            <p className="chat__empty-title">What would you like to understand?</p>
             <p className="chat__empty-sub">
-              Ask any question about {topicName || 'this topic'} and I'll provide an AI-powered answer with relevant sources.
+              Ask a specific question about {topicName || 'this topic'} and use the answer as a starting point for further reading.
             </p>
 
             <div className="chat__suggestions">

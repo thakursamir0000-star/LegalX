@@ -1,13 +1,18 @@
-/* ============================================================
-   Summary Styles
-   ============================================================ */
 .summary {
-  background: var(--glass-bg);
-  backdrop-filter: blur(var(--glass-blur));
-  -webkit-backdrop-filter: blur(var(--glass-blur));
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-lg);
+  position: relative;
   overflow: hidden;
+  background: var(--color-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 4px var(--radius-lg) var(--radius-lg) var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.summary::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: var(--color-accent);
 }
 
 .summary__header {
@@ -25,45 +30,47 @@
 }
 
 .summary__icon {
-  color: var(--color-primary-light);
+  color: var(--color-accent);
 }
 
 .summary__title {
-  font-size: var(--font-size-lg);
-  font-weight: 700;
-  color: var(--color-text-primary);
+  font-family: var(--font-display);
+  font-size: var(--font-size-xl);
+  font-weight: 500;
 }
 
 .summary__body {
-  padding: var(--spacing-6);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-4);
+  padding: var(--spacing-8);
 }
 
 .summary__paragraph {
-  font-size: var(--font-size-base);
+  max-width: 920px;
   color: var(--color-text-secondary);
-  line-height: 1.8;
+  font-size: var(--font-size-base);
+  line-height: 1.85;
 }
 
 .summary__paragraph:first-child {
   color: var(--color-text-primary);
-  font-size: var(--font-size-lg);
-  line-height: 1.7;
+  font-family: var(--font-display);
+  font-size: var(--font-size-xl);
+  line-height: 1.55;
 }
 
 .summary__footer {
   padding: var(--spacing-4) var(--spacing-6);
   border-top: 1px solid var(--border-color);
+  background: var(--color-surface-light);
 }
 
 .summary__meta {
-  font-size: var(--font-size-xs);
   color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
 }
 
-/* Empty state */
 .summary--empty {
   display: flex;
   flex-direction: column;
@@ -75,6 +82,8 @@
   text-align: center;
 }
 
-.summary--empty p {
-  font-size: var(--font-size-sm);
+@media (max-width: 639px) {
+  .summary__body {
+    padding: var(--spacing-6);
+  }
 }

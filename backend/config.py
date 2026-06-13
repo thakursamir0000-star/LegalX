@@ -35,10 +35,6 @@ class Settings(BaseSettings):
     GEMINI_MODEL: str = "gemini-2.5-flash-lite"
     GEMINI_EMBEDDING_MODEL: str = "models/gemini-embedding-001"
 
-    # --- TTS ---
-    TTS_VOICE: str = "en-US-AriaNeural"
-    TTS_RATE: str = "+0%"
-
     # --- Server ---
     HOST: str = "0.0.0.0"
     PORT: int = 8000

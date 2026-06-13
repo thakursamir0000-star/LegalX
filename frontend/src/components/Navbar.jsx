@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Scale, Menu, X, Home, Info } from 'lucide-react';
+import { Scale, Menu, X, Home, Info, BookOpen } from 'lucide-react';
 import './Navbar.css';
 
 function Navbar() {
@@ -32,6 +32,7 @@ function Navbar() {
           <span className="navbar__logo-text">
             Legal<span className="navbar__logo-accent">X</span>
           </span>
+          <span className="navbar__logo-note">law, made clearer</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -43,10 +44,11 @@ function Navbar() {
             <Home size={16} />
             Home
           </Link>
-          <a
-            href="#about"
-            className="navbar__link"
-          >
+          <a href="/#topics" className="navbar__link">
+            <BookOpen size={16} />
+            Guides
+          </a>
+          <a href="/#about" className="navbar__link">
             <Info size={16} />
             About
           </a>
@@ -71,7 +73,11 @@ function Navbar() {
           <Home size={18} />
           Home
         </Link>
-        <a href="#about" className="navbar__mobile-link">
+        <a href="/#topics" className="navbar__mobile-link">
+          <BookOpen size={18} />
+          Guides
+        </a>
+        <a href="/#about" className="navbar__mobile-link">
           <Info size={18} />
           About
         </a>

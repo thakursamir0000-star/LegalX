@@ -115,6 +115,7 @@ function TopicPage() {
             <IconComponent size={32} style={{ color: accentColor }} />
           </div>
           <div>
+            <span className="topic-header__eyebrow">Plain-language legal guide</span>
             <h1 className="topic-header__title">{topicName}</h1>
             {topic?.description && (
               <p className="topic-header__desc">{topic.description}</p>

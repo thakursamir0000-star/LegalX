@@ -20,7 +20,6 @@ function Summary({ summary, loading }) {
     );
   }
 
-  // Handle summary as string (from backend) or object with .content
   const summaryText = typeof summary === 'string' ? summary : summary?.content || '';
 
   if (!summaryText) {
@@ -60,7 +59,7 @@ function Summary({ summary, loading }) {
 
       <div className="summary__footer">
         <span className="summary__meta">
-          AI-generated summary • Powered by Gemini
+          AI-assisted summary - always check official sources for legal decisions
         </span>
       </div>
     </div>

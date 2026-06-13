@@ -39,26 +39,22 @@ function TopicCard({ topic, index = 0 }) {
         animationDelay: `${index * 100}ms`,
       }}
     >
-      {/* Accent border */}
-      <div className="topic-card__accent" />
+      <span className="topic-card__number">0{index + 1}</span>
 
-      {/* Icon */}
       <div className="topic-card__icon-wrapper">
         <IconComponent size={24} />
       </div>
 
-      {/* Content */}
       <div className="topic-card__content">
         <h3 className="topic-card__title">{topic.name}</h3>
-        <p className="topic-card__description line-clamp-2">
+        <p className="topic-card__description">
           {topic.description}
         </p>
       </div>
 
-      {/* Footer */}
       <div className="topic-card__footer">
         <span className="topic-card__explore">
-          Explore
+          Open guide
           <ArrowRight size={16} className="topic-card__arrow" />
         </span>
       </div>

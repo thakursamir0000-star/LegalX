@@ -1,9 +1,9 @@
 /**
- * API Base URL - supports environment variable override
- * Development: http://localhost:8000
- * Production: use VITE_API_URL env var from Vercel/Netlify
+ * API Base URL - supports environment variable override.
+ * In development, Vite proxies /api requests to the backend (see vite.config.js),
+ * so the base URL should be empty. For production, set VITE_API_URL.
  */
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.VITE_API_URL || '';
 
 /**
  * Generic fetch wrapper with error handling, timeout, and JSON parsing.
