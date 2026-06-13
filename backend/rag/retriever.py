@@ -14,8 +14,9 @@ from rag.vector_store import get_or_create_vector_store
 
 logger = logging.getLogger(__name__)
 
-MAX_RETRIES = 5
-INITIAL_BACKOFF = 10  # seconds
+MAX_RETRIES = 2
+INITIAL_BACKOFF = 2  # seconds
+
 
 
 def _get_client() -> genai.Client:
@@ -172,6 +173,52 @@ def _extract_sources(
     return sources
 
 
+def get_local_fallback(topic_id: str, question: str) -> str | None:
+    """Provide a fallback answer from the pre-generated caches if Gemini fails."""
+    try:
+        from pipeline.content_processor import load_cached
+        cached = load_cached(topic_id)
+        if not cached or not cached.key_info:
+            return None
+        
+        q = question.lower()
+        key_info = cached.key_info
+        
+        if "provision" in q or "rules" in q or "law" in q:
+            items = key_info.get("provisions", [])
+            if items:
+                joined = "\n".join([f"* {item}" for item in items])
+                return f"Based on the pre-processed records for the {cached.name}, here are the key provisions:\n\n{joined}"
+        
+        if "beneficiar" in q or "who" in q or "target" in q:
+            items = key_info.get("beneficiaries", [])
+            if items:
+                joined = "\n".join([f"* {item}" for item in items])
+                return f"Under the {cached.name}, the primary beneficiaries are:\n\n{joined}"
+                
+        if "penalt" in q or "punish" in q or "fine" in q or "jail" in q:
+            items = key_info.get("penalties", [])
+            if items:
+                joined = "\n".join([f"* {item}" for item in items])
+                return f"The {cached.name} defines the following penalties and punishments for offenses:\n\n{joined}"
+                
+        if "right" in q:
+            items = key_info.get("rights", [])
+            if items:
+                joined = "\n".join([f"* {item}" for item in items])
+                return f"Here are the rights protected under the {cached.name}:\n\n{joined}"
+                
+        # Default fallback to summary if they ask a general question
+        if "summary" in q or "what is" in q or "about" in q:
+            if cached.summary:
+                return f"Here is an overview summary of the {cached.name}:\n\n{cached.summary}"
+                
+    except Exception as e:
+        logging.getLogger(__name__).error("Fallback failed: %s", e)
+    
+    return None
+
+
 async def ask_question(
     topic_id: str,
     question: str,
@@ -215,6 +262,15 @@ async def ask_question(
         answer = await _call_gemini_with_retry(client, prompt)
     except Exception as e:
         logger.error("Gemini generation failed: %s", e)
+        # Try local cache fallback for common suggested questions
+        fallback_answer = get_local_fallback(topic_id, question)
+        if fallback_answer:
+            logger.info("Using local cache fallback answer for query: %s", question)
+            return {
+                "answer": fallback_answer,
+                "sources": [f"{topic_id}.txt"]
+            }
+
         return {
             "answer": (
                 f"I'm sorry, I encountered an error while processing your "
@@ -222,7 +278,6 @@ async def ask_question(
             ),
             "sources": [],
         }
-
 
     # Step 4: Extract sources
     sources = _extract_sources(chunks, answer)
@@ -234,3 +289,4 @@ async def ask_question(
     )
 
     return {"answer": answer, "sources": sources}
+
