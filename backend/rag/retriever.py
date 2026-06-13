@@ -217,11 +217,12 @@ async def ask_question(
         logger.error("Gemini generation failed: %s", e)
         return {
             "answer": (
-                "I'm sorry, I encountered an error while processing your "
-                "question. Please try again in a moment."
+                f"I'm sorry, I encountered an error while processing your "
+                f"question. Error details: {type(e).__name__}: {str(e)}"
             ),
             "sources": [],
         }
+
 
     # Step 4: Extract sources
     sources = _extract_sources(chunks, answer)
