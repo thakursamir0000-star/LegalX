@@ -185,28 +185,29 @@ def get_local_fallback(topic_id: str, question: str) -> str | None:
         key_info = cached.key_info
         
         if "provision" in q or "rules" in q or "law" in q:
-            items = key_info.get("provisions", [])
+            items = key_info.provisions
             if items:
                 joined = "\n".join([f"* {item}" for item in items])
                 return f"Based on the pre-processed records for the {cached.name}, here are the key provisions:\n\n{joined}"
         
         if "beneficiar" in q or "who" in q or "target" in q:
-            items = key_info.get("beneficiaries", [])
+            items = key_info.beneficiaries
             if items:
                 joined = "\n".join([f"* {item}" for item in items])
                 return f"Under the {cached.name}, the primary beneficiaries are:\n\n{joined}"
                 
         if "penalt" in q or "punish" in q or "fine" in q or "jail" in q:
-            items = key_info.get("penalties", [])
+            items = key_info.penalties
             if items:
                 joined = "\n".join([f"* {item}" for item in items])
                 return f"The {cached.name} defines the following penalties and punishments for offenses:\n\n{joined}"
                 
         if "right" in q:
-            items = key_info.get("rights", [])
+            items = key_info.rights
             if items:
                 joined = "\n".join([f"* {item}" for item in items])
                 return f"Here are the rights protected under the {cached.name}:\n\n{joined}"
+
                 
         # Default fallback to summary if they ask a general question
         if "summary" in q or "what is" in q or "about" in q:
