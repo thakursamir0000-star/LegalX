@@ -1,0 +1,36 @@
+{
+  "topic_id": "consumer_protection_act",
+  "name": "Consumer Protection Act",
+  "description": "This Act safeguards your rights as a consumer in India, providing clear avenues to resolve complaints about unfair trade practices, defective products, or deficient services.",
+  "icon": "ShoppingCart",
+  "summary": "The Consumer Protection Act, 2019, is a comprehensive law designed to protect consumer interests across India (excluding Jammu and Kashmir, as per the text). It replaced the 1986 Act, updating consumer rights and grievance redressal mechanisms for the modern era, including e-commerce.\n\nThe Act broadly defines a 'consumer' as anyone buying goods or hiring services for a fee, excluding purchases for resale or commercial purposes. It outlines key 'consumer rights,' such as the right to safety, information, choice, to be heard, seek redressal against unfair practices, and consumer awareness.\n\nA significant addition is the **Central Consumer Protection Authority (CCPA)**, a new regulatory body tasked with promoting, protecting, and enforcing consumer rights. The CCPA investigates violations, prevents unfair trade practices, and can issue directions against misleading advertisements, imposing penalties and even banning endorsers.\n\nFor resolving disputes, the Act establishes a three-tier system of **Consumer Disputes Redressal Commissions**: District (up to ₹1 Crore), State (₹1-10 Crore), and National (above ₹10 Crore). Consumers can file complaints electronically, and the Act promotes mediation through dedicated cells attached to these commissions.\n\nIt introduces **Product Liability**, holding manufacturers, service providers, and sellers accountable for harm caused by defective products or services. Furthermore, the Act includes stringent penalties, including imprisonment and substantial fines, for manufacturing or selling adulterated or spurious goods, with higher penalties for causing injury or death.",
+  "key_info": {
+    "rights": [
+      "Consumers have the right to be protected against hazardous goods and services.",
+      "Consumers have the right to be informed about product quality, quantity, and price.",
+      "Consumers have the right to seek redressal against unfair trade practices.",
+      "Consumers have the right to be heard and assured their interests are considered.",
+      "Consumers have the right to consumer awareness."
+    ],
+    "provisions": [
+      "The Act provides for the establishment of consumer disputes redressal commissions at three levels.",
+      "The Central Consumer Protection Authority (CCPA) is established to regulate consumer rights and unfair trade practices.",
+      "Consumer mediation cells are established and attached to consumer commissions for dispute settlement.",
+      "The Act introduces product liability actions against manufacturers, service providers, and sellers.",
+      "Consumers can file complaints electronically within two years of the cause of action."
+    ],
+    "penalties": [
+      "CCPA can impose a penalty of up to Rs. 10 lakhs for false or misleading advertisements.",
+      "Endorsers of misleading advertisements can be banned for up to one year.",
+      "Manufacturing or selling adulterated goods without injury carries imprisonment up to 6 months and a Rs. 1 lakh fine.",
+      "Causing death by selling adulterated goods leads to imprisonment up to life and a minimum Rs. 10 lakh fine.",
+      "Manufacturing or selling spurious goods causing death can result in imprisonment for life."
+    ],
+    "beneficiaries": [
+      "Individuals who purchase goods or avail services for personal use.",
+      "Recognized consumer associations protecting collective consumer interests.",
+      "All consumers, by ensuring protection against unfair trade practices and exploitation."
+    ]
+  },
+  "has_audio": true
+}

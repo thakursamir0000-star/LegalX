@@ -1,0 +1,35 @@
+{
+  "topic_id": "gst_registration",
+  "name": "GST Registration",
+  "description": "Uncover whether your business needs to register for GST in India. Learn about the turnover thresholds and specific activities that make GST registration mandatory, ensuring you stay compliant.",
+  "icon": "Receipt",
+  "summary": "The Goods and Services Tax (GST) Act, introduced in India in 2017, revolutionized indirect taxation by replacing multiple levies like excise duty and VAT with a single, comprehensive system. It's a multi-stage, destination-based tax applied to every value addition of goods and services nationwide. GST comprises CGST (Central) and SGST (State) for intra-state transactions, and IGST (Integrated) for inter-state sales. Tax rates range from 0% for essentials to 28% for luxury items.\n\nGST registration is mandatory for businesses exceeding a certain annual turnover: generally Rs. 40 lakhs for goods (Rs. 20 lakhs in special states) or Rs. 20 lakhs for services (Rs. 10 lakhs in special states). However, some businesses *must* register irrespective of turnover, such as those making inter-state supplies, operating as e-commerce platforms, or liable to pay tax under the reverse charge mechanism.\n\nThe registration process is online via the official GST portal. Applicants need a Permanent Account Number (PAN), mobile number, and email to start. They must provide detailed business information, promoter details, place of business, and bank particulars, uploading documents like PAN, Aadhaar, business proof, and address proof. Once approved by a tax officer, a unique 15-digit GST Identification Number (GSTIN) is issued.\n\nRegistration can be cancelled by authorities for non-compliance (e.g., not filing returns) or voluntarily if a business ceases operations. It can also be revoked within a specific timeframe. Post-registration, businesses must file various returns monthly or quarterly, such as GSTR-1 for sales and GSTR-3B for summary and tax payment. Smaller businesses with turnover up to Rs. 1.5 crore can opt for a simplified Composition Scheme, paying a fixed lower tax rate but cannot claim Input Tax Credit (ITC) for taxes paid on purchases.",
+  "key_info": {
+    "rights": [
+      "Registered persons are entitled to take Input Tax Credit on goods or services used for business.",
+      "A person may voluntarily register for GST even if not mandatorily required.",
+      "A person can obtain separate GST registration for multiple business verticals in a state.",
+      "A registered person whose registration is cancelled may apply for revocation within 30 days."
+    ],
+    "provisions": [
+      "Suppliers are liable for GST registration if their aggregate turnover exceeds specified thresholds.",
+      "Certain persons are compulsorily required to register for GST regardless of their turnover.",
+      "Every liable person must apply for GST registration within 30 days from becoming liable.",
+      "Registration can be cancelled by the proper officer or voluntarily by the registered person.",
+      "Eligible registered persons can claim Input Tax Credit on goods and services used for business.",
+      "Businesses with turnover up to Rs. 1.5 crores can opt for the Composition Scheme."
+    ],
+    "penalties": [
+      "Registration can be cancelled by the proper officer for contravening Act provisions.",
+      "Failure to furnish returns for 3 or 6 consecutive periods can lead to registration cancellation.",
+      "Registration obtained by fraud, willful misstatement, or suppression of facts is subject to cancellation."
+    ],
+    "beneficiaries": [
+      "Businesses and suppliers of goods and services are direct beneficiaries of the law's framework.",
+      "The Central Government benefits from collecting Central and Integrated Goods and Services Tax.",
+      "State Governments benefit from collecting State and Union Territory Goods and Services Tax.",
+      "Registered persons benefit from claiming Input Tax Credit on business-related supplies."
+    ]
+  },
+  "has_audio": true
+}

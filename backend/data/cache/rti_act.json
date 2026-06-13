@@ -1,0 +1,29 @@
+{
+  "topic_id": "rti_act",
+  "name": "RTI Act",
+  "description": "The Right to Information (RTI) Act empowers citizens to access information held by public authorities. This promotes government transparency and accountability by giving individuals the power to scrutinize public workings.",
+  "icon": "FileText",
+  "summary": "The Right to Information (RTI) Act, 2005, is a landmark Indian law designed to empower citizens by securing access to information held by public authorities. Its core purpose is to promote transparency and accountability in government functioning.\n\nThe Act applies to all citizens across India and covers a broad range of \"public authorities,\" including central and state government bodies, and even non-government organizations substantially financed by the government. \"Information\" is broadly defined to include any material in any form – records, documents, emails, data, samples, and even information relating to private bodies accessible by a public authority.\n\nKey provisions of the Act include:\n*   **Citizen's Right:** Every citizen has the right to inspect works, documents, and records, take notes or certified copies, and obtain information in various electronic or physical forms.\n*   **Public Authority Obligations:** Public authorities must proactively publish significant information about their organization, functions, budgets, and employee salaries. They must also designate Public Information Officers (PIOs) at various levels to handle requests.\n*   **Request Process:** Citizens can apply to a PIO in writing (or electronically) in English, Hindi, or the local official language, paying a prescribed fee. Crucially, applicants are not required to give any reason for requesting information.\n*   **Timelines:** PIOs must provide the information within 30 days. If the information concerns the life or liberty of a person, it must be provided within 48 hours. Non-response within these periods is deemed a refusal.\n*   **Exemptions:** Certain categories of information are exempt from disclosure, such as matters affecting national security, ongoing investigations, commercial secrets, personal information unrelated to public activity (unless larger public interest justifies it), or information that would breach parliamentary privilege. However, even with exemptions, partial disclosure (severability) is allowed for non-exempt parts of a record.\n*   **Information Commissions:** The Act establishes independent Central and State Information Commissions to hear appeals and complaints from citizens whose requests have been denied or not properly addressed.\n\nThe RTI Act thus provides a practical framework for citizens to hold their government accountable by demanding transparency.",
+  "key_info": {
+    "rights": [
+      "Citizens have the right to access information from public authorities.",
+      "The right includes inspecting work, documents, and records.",
+      "Citizens can take notes, extracts, or certified copies of documents.",
+      "Information can be obtained in electronic format or as printouts."
+    ],
+    "provisions": [
+      "Public authorities are obligated to maintain and proactively publish records.",
+      "Public authorities must designate Public Information Officers to provide information.",
+      "Citizens can request information in writing or electronically with prescribed fees.",
+      "Information must generally be provided within 30 days of receiving the request.",
+      "Information concerning life or liberty must be disclosed within 48 hours.",
+      "Certain categories of information are exempt from disclosure."
+    ],
+    "penalties": [],
+    "beneficiaries": [
+      "All citizens of India are granted the right to access information.",
+      "The public benefits from enhanced transparency and accountability of authorities."
+    ]
+  },
+  "has_audio": true
+}

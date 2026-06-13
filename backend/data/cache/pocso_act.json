@@ -1,0 +1,34 @@
+{
+  "topic_id": "pocso_act",
+  "name": "POCSO Act",
+  "description": "The POCSO Act is a comprehensive Indian law protecting children under 18 from sexual offences like penetrative and aggravated assault. Enacted in 2012 and amended in 2019, it prescribes stringent punishments and establishes special courts to ensure justice for child victims nationwide.",
+  "icon": "Shield",
+  "summary": "The Protection of Children from Sexual Offences (POCSO) Act, 2012, applicable across India and amended in 2019, is a crucial law designed to protect children from sexual abuse. A \"child\" is defined as any person below 18 years of age.\n\nThe Act covers a spectrum of offences:\n1.  **Penetrative Sexual Assault:** Involves sexual intercourse or other forms of penetration. The 2019 amendment increased the minimum punishment to 10 years imprisonment, extending to life.\n2.  **Aggravated Penetrative Sexual Assault:** Occurs under specific circumstances, such as by a person in authority (e.g., police, relative), causing grievous harm, making a child pregnant, or against a child below twelve. This carries severe penalties, ranging from 20 years to imprisonment for the remainder of natural life, with the 2019 amendment adding the death penalty for aggravated penetrative sexual assault on children below 12 years.\n3.  **Sexual Assault:** Involves non-penetrative sexual touching with sexual intent, punishable by 3 to 5 years imprisonment. An \"aggravated\" form also exists, with harsher penalties.\n4.  **Sexual Harassment:** Includes sexually suggestive words, gestures, showing pornographic material, stalking, or enticing children for pornographic purposes, punishable by up to three years imprisonment.\n5.  **Child Pornography:** Criminalizes using a child for pornographic purposes in any media, storing it for commercial use, or with intent to distribute.\n\nA key provision mandates that anyone who knows or suspects an offence has occurred must report it to the police. The Act also ensures child-friendly reporting procedures and strictly prohibits media from disclosing the identity of the child victim.",
+  "key_info": {
+    "rights": [
+      "Children have the right to immediate emergency medical treatment when needed.",
+      "Children's statements must be recorded in simple, understandable language.",
+      "Children's identity must not be published or disclosed by media."
+    ],
+    "provisions": [
+      "The Act defines a child as any person below eighteen years of age.",
+      "Special Courts are designated for trials of offenses under this Act.",
+      "All persons must report known or apprehended offenses to the police.",
+      "Media and studios are prohibited from disclosing the child victim's identity.",
+      "The Act criminalizes various types of sexual offenses against children."
+    ],
+    "penalties": [
+      "Penetrative sexual assault incurs imprisonment from ten years to life, plus a fine.",
+      "Aggravated penetrative sexual assault can result in 20 years to life imprisonment or death.",
+      "Sexual assault is punishable with three to five years imprisonment and a fine.",
+      "Sexual harassment can lead to imprisonment up to three years and a fine.",
+      "Using a child for pornography carries at least five years imprisonment and a fine.",
+      "False complaints or information are subject to imprisonment."
+    ],
+    "beneficiaries": [
+      "Children below the age of eighteen years.",
+      "Child victims of sexual offenses under the Act."
+    ]
+  },
+  "has_audio": true
+}

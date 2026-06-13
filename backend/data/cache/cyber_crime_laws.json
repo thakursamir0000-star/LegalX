@@ -1,0 +1,39 @@
+{
+  "topic_id": "cyber_crime_laws",
+  "name": "Cyber Crime Laws",
+  "description": "Dive into India's core cyber crime legislation, the Information Technology Act, 2000. This law defines key digital terms and outlines the legal framework for cyber offenses, extending to acts committed even outside India.",
+  "icon": "Monitor",
+  "summary": "The Information Technology Act, 2000 (amended in 2008), is India's core law addressing cybercrime and electronic commerce. It applies throughout India and to any cyber offence committed outside India by any person. The Act defines key digital terms like \"computer,\" \"computer network,\" \"data,\" and \"intermediary\" (which includes service providers, web hosts, and search engines).\n\nIts purpose is to penalise and provide compensation for digital misconduct. Key provisions include:\n\n*   **Section 43:** Imposes civil penalties, requiring compensation up to Rs. 5 crore for unauthorized access, data theft, introducing viruses, damaging systems, or disrupting services.\n*   **Section 66:** Criminalises these acts if committed dishonestly or fraudulently, with penalties up to 3 years imprisonment and/or a Rs. 5 lakh fine.\n*   **Section 66C & 66D:** Address identity theft and cheating by impersonation using computer resources, punishable with up to 3 years imprisonment and a Rs. 1 lakh fine.\n*   **Section 66E:** Prohibits violating privacy by capturing or publishing private images without consent, with penalties up to 3 years imprisonment and/or a Rs. 2 lakh fine.\n*   **Section 66F:** Severely punishes cyber terrorism, defined as cyber acts threatening India's security or causing harm, carrying potential life imprisonment.\n*   **Sections 67, 67A, 67B:** Target publishing or transmitting obscene, sexually explicit, or child pornography material, with significant penalties including up to 7 years imprisonment and Rs. 10 lakhs fine for repeat offences involving child pornography.\n*   **Intermediaries (Section 67C):** Are required to preserve specific user information.\n*   **Government Powers (Sections 69 & 69A):** Allow the government to direct interception, monitoring, or blocking of online information in the interest of national security, public order, or defence.\n\nNotably, Section 66A, which criminalised sending offensive messages online, was struck down by the Supreme Court in 2015 for violating freedom of speech. This Act provides a comprehensive framework to protect digital assets and ensure accountability in the digital space.",
+  "key_info": {
+    "rights": [
+      "Individuals have a right to the integrity and security of their computer resources.",
+      "The law protects individuals against unauthorized access and damage to their digital property.",
+      "Citizens are protected from identity theft and fraudulent use of their electronic signatures.",
+      "Individuals have a right to privacy concerning their private images and information.",
+      "Victims of cyber damage are entitled to compensation for losses incurred."
+    ],
+    "provisions": [
+      "The Act extends its jurisdiction to cover offenses committed outside India.",
+      "It defines key cyber terms such as \"computer network\" and \"cyber security.\"",
+      "Intermediaries are required to preserve and retain specific digital information.",
+      "The government has powers to intercept or monitor cyber information for national security.",
+      "The Central Government can block public access to certain online information.",
+      "It establishes a compensation mechanism for damages to computer systems."
+    ],
+    "penalties": [
+      "Damage to computer systems can incur compensation up to Rs. 5 crores per incident.",
+      "Tampering with computer source documents is punishable by imprisonment up to 3 years or a fine.",
+      "Computer-related offenses, including hacking, carry imprisonment up to 3 years or a fine up to Rs. 5 lakhs.",
+      "Identity theft is punishable by imprisonment up to 3 years and a fine up to Rs. 1 lakh.",
+      "Violation of privacy results in imprisonment up to 3 years or a fine not exceeding Rs. 2 lakhs.",
+      "Cyber terrorism can lead to imprisonment for life."
+    ],
+    "beneficiaries": [
+      "Owners of computer systems and data benefit from protection against damage and unauthorized access.",
+      "Individuals are protected from cyber crimes like identity theft, privacy violations, and hacking.",
+      "The nation and its people are secured against threats of cyber terrorism and public disorder.",
+      "The general public benefits from regulations on obscene content and information blocking."
+    ]
+  },
+  "has_audio": true
+}
