@@ -102,10 +102,13 @@ async def run_pipeline() -> None:
 # ──────────────────────────────────────────────
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """Run the pipeline on startup, cleanup on shutdown."""
-    await run_pipeline()
+    """Start the pipeline in the background on startup, cleanup on shutdown."""
+    import asyncio
+    # Run heavy startup pipeline in background to prevent blocking port binding
+    asyncio.create_task(run_pipeline())
     yield
     logger.info("LegalX backend shutting down.")
+
 
 
 # ──────────────────────────────────────────────
