@@ -31,14 +31,15 @@ class Settings(BaseSettings):
     CHUNK_SIZE: int = 1000
     CHUNK_OVERLAP: int = 200
 
+    # --- Server ---
+    HOST: str = "0.0.0.0"
+    PORT: int = 8000
+    CORS_ORIGINS: list[str] = ["*"]
+
     # --- Gemini ---
     GEMINI_MODEL: str = "gemini-2.5-flash-lite"
     GEMINI_EMBEDDING_MODEL: str = "models/gemini-embedding-001"
 
-    # --- Server ---
-    HOST: str = "0.0.0.0"
-    PORT: int = 8000
-    CORS_ORIGINS: list[str] = ["http://localhost:5173", "http://127.0.0.1:5173"]
 
     # --- Topic Configuration ---
     TOPIC_METADATA: dict = {
