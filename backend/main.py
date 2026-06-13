@@ -143,11 +143,17 @@ app.include_router(chat_router)
 async def health_check():
     """Health check endpoint."""
     doc_count = get_collection_count()
+    key = settings.GEMINI_API_KEY or ""
     return {
         "status": "healthy",
         "documents_indexed": doc_count,
         "topics_available": list(settings.TOPIC_METADATA.keys()),
+        "gemini_api_key_configured": bool(key),
+        "gemini_api_key_length": len(key),
+        "gemini_api_key_prefix": key[:6] if key else "",
+        "gemini_api_key_suffix": key[-4:] if key else "",
     }
+
 
 
 # ──────────────────────────────────────────────
