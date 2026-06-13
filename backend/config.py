@@ -37,8 +37,9 @@ class Settings(BaseSettings):
     CORS_ORIGINS: list[str] = ["*"]
 
     # --- Gemini ---
-    GEMINI_MODEL: str = "gemini-2.5-flash-lite"
+    GEMINI_MODEL: str = "gemini-1.5-flash"
     GEMINI_EMBEDDING_MODEL: str = "models/gemini-embedding-001"
+
 
 
     # --- Topic Configuration ---
