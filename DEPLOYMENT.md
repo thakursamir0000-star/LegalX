@@ -114,6 +114,44 @@ curl https://your-backend-railway.railway.app/api/health
 
 ---
 
+## Part 1.5: Alternative Backend Deployment to Render (Free Tier)
+
+Render offers a fully-featured free tier for hosting web services and supports Docker deployments.
+
+### Step 1: Create Render Account
+1. Go to [render.com](https://render.com)
+2. Click "Sign Up" and choose GitHub.
+
+### Step 2: Create a Web Service
+1. Click **New +** at the top right and select **Web Service**.
+2. Select **Build and deploy from a Git repository** (or select the connected GitHub repository `LegalX`).
+3. Connect the `LegalX` repository.
+
+### Step 3: Configure Project
+Configure the following settings on the creation screen:
+- **Name**: `legalx-backend`
+- **Region**: Select the region closest to you.
+- **Branch**: `main`
+- **Runtime**: `Docker` *(Render will automatically detect the root `Dockerfile` and build the container, guaranteeing a consistent Python runtime env)*
+- **Instance Type**: Select **Free**.
+
+### Step 4: Configure Environment Variables
+1. Scroll down to **Advanced** or find the **Environment Variables** section.
+2. Click **Add Environment Variable** and add the following keys:
+
+| Key | Value | Description |
+|-----|-------|-------------|
+| `GEMINI_API_KEY` | `your-gemini-key` | Your Google Gemini API Key |
+| `GOOGLE_API_KEY` | `your-gemini-key` | Duplicate of Gemini key for SDK backup |
+
+### Step 5: Deploy & Monitor
+1. Click **Create Web Service** (or **Deploy**).
+2. Monitor Render's build and deployment log. It will build the Docker container and display `Uvicorn running on http://0.0.0.0:8000` (respecting Render's dynamic `$PORT` assignment).
+3. Once the service shows "Live", copy the Render Web Service URL (looks like: `https://legalx-backend.onrender.com`).
+4. **Note this URL** - you will need to set it as `VITE_API_URL` when deploying the frontend on Vercel.
+
+---
+
 ## Part 2: Frontend Deployment to Vercel
 
 Vercel has zero-config deployment for Vite projects.
