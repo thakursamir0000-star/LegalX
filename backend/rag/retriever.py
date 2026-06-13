@@ -209,15 +209,18 @@ def get_local_fallback(topic_id: str, question: str) -> str | None:
                 return f"Here are the rights protected under the {cached.name}:\n\n{joined}"
 
                 
-        # Default fallback to summary if they ask a general question
-        if "summary" in q or "what is" in q or "about" in q:
-            if cached.summary:
-                return f"Here is an overview summary of the {cached.name}:\n\n{cached.summary}"
+        # General default fallback to summary for any other queries
+        if cached.summary:
+            return (
+                f"I am currently operating in offline mode due to API rate limits, "
+                f"but here is a comprehensive summary of the {cached.name}:\n\n{cached.summary}"
+            )
                 
     except Exception as e:
         logging.getLogger(__name__).error("Fallback failed: %s", e)
     
     return None
+
 
 
 async def ask_question(
